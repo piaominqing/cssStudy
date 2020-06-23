@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--引入外部样式-->
+    <link rel="stylesheet" type="text/css" href="../css/import.css" />
+    <title>css 样式导入四种方式</title>
+    <!--内部样式-->
+    <style type="text/css">
+      h1 {
+        color: green;
+      }
+    </style>
+    <!--导入外部样式-->
+    <style type="text/css">
+      @import '../css/import.css';
+    </style>
+  </head>
+  <body>
+    <!--内联样式-->
+    <div style="width: 300;"></div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>选择器</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      div {
+        color: teal;
+      }
+      #title,
+      #subtitle {
+        color: red;
+      }
+      .title {
+        color: blue;
+      }
+      .phone {
+        font-size: 20px;
+      }
+      p.phone {
+        color: red;
+      }
+      p[title] {
+        color: red;
+      }
+      p[title='huawei'] {
+        color: blue;
+      }
+      p[title~='hua'] {
+        color: pink;
+      }
+      p[title|='hua'] {
+        color: green;
+      }
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: blue;
+      }
+      a:hover {
+        color: yellow;
+      }
+      a:active {
+        color: green;
+      }
+      div span {
+        color: pink;
+      }
+      span {
+        color: blue;
+      }
+      p > span {
+        color: violet;
+      }
+      span + span {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">我是出镜率很高的h1</h1>
+    <h2 id="subtitle">我是出镜率不高的h2</h2>
+    <div style="background: yellow;">
+      华为路由器
+    </div>
+    <p>
+      使用5G技术
+    </p>
+    <ul>
+      <li>5G技术是下一代通信技术</li>
+    </ul>
+    <div class="title">华为5G技术</div>
+    <div class="phone">P40</div>
+    <div>路由器</div>
+    <div>智慧屏</div>
+    <div class="phone">Mate40</div>
+    <p class="phone">nova</p>
+    <p title="at">华为在线教育</p>
+    <p title="huawei">华为在线教育2</p>
+    <p title="huawei hua">华为在线教育3</p>
+    <p title="hua-wei">华为在线教育4</p>
+    <a href="https://huawei.com">华为</a>
+    <p>
+      华为云：
+      <span
+        >HCIA认证
+        <span
+          >HCIA认证
+          <span>HCIA认证</span>
+          <span>HCIA认证</span>
+        </span>
+      </span>
+    </p>
+  </body>
+</html>
