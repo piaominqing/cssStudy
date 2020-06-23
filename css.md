@@ -72,6 +72,32 @@ id 的需要唯一
 - 内联样式的权重：1000
 - 特殊处理：!important(强制使用)
 
+# 常用属性
+
+## 字体
+
+- font-family 字体主题
+- font-size 字体大小
+- font-style 字体倾斜
+- font-weight 字体粗细
+
+## 文本
+
+- color 颜色
+- line-height 行高
+- text-align 对齐方式
+- direction 方向
+- text-indent 缩进
+- text-decoration 装饰线
+- letter-spacing 间隔
+- text-shadow 阴影
+
+## 尺寸
+
+- 宽度和高度 auto,长度,百分比
+- 最小宽度和最小高度
+- 最大宽度和最大高度
+
 # 兼容问题
 
 1. 删除浏览器初始化样式。
