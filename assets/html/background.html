@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <style>
+      .bak {
+        height: 1000px;
+        /* background-color: red; */
+        /* background-color: #ff0000; */
+        background-color: rgb(255, 0, 0);
+        background-image: url('../image/select_arrow.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-attachment: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bak"></div>
+    <script>
+      var videos = document.querySelectorAll('.videoList')
+      function abc(i) {
+        var time = 0
+        var timeText = videos[i].children[1].children[1].children[1].innerText
+        if (timeText.length === 10) {
+          var h = parseInt(timeText.substring(0, 2))
+          var m = parseInt(timeText.substring(3, 5))
+          var s = parseInt(timeText.substring(6, 8))
+          time = (h * 60 * 60 + m * 60 + s) * 1000
+        } else {
+          var m = parseInt(timeText.substring(0, 2))
+          var s = parseInt(timeText.substring(3, 5))
+          time = (m * 60 + s) * 1000
+        }
+        var isCompleted =
+          videos[i].children[1].children[1].innerText.indexOf('已学完') > -1
+
+        if (!isCompleted) {
+          console.log(111)
+          videos[i].click()
+          setTimeout(function () {
+            if (i < videos.length) {
+              abc(i + 1)
+            }
+          }, time + 61000)
+        } else {
+          if (i < videos.length) {
+            abc(i + 1)
+          }
+        }
+      }
+
+      abc(0)
+    </script>
+  </body>
+</html>

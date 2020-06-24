@@ -105,6 +105,38 @@ id 的需要唯一
 - list-style-type 标记类型，跟 ul 的 type 相同
 - list-style
 
+## 背景
+
+- background-color 背景颜色
+- background-image 背景图片
+- background-repeat 平铺设置
+- background-position 初始位置, 左上角为 0
+- background-attachment 滚动
+- background
+
+# 盒模型
+
+- Box Model width = 2\*margin + 2\*border+ 2\*padding + div
+
+## 内边距 padding
+
+## 边框 border
+
+## 外边距 margin 左右剧中 0 auto
+
+## display
+
+修改元素默认 display 块级和内联
+
+- none,
+- block,
+- inline 不能设置宽高,
+- inline-block 设置宽高时 block
+  - 内联元素间隙问题 body {font-size: 0}
+
 # 兼容问题
 
 1. 删除浏览器初始化样式。
+
+- body {font-size: 0}
+- \*{margin:0; padding:0}
