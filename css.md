@@ -98,6 +98,13 @@ id 的需要唯一
 - 最小宽度和最小高度
 - 最大宽度和最大高度
 
+## 列表
+
+- list-style-image 使用图片作为列表项前面的标记
+- list-style-position 标记位置
+- list-style-type 标记类型，跟 ul 的 type 相同
+- list-style
+
 # 兼容问题
 
 1. 删除浏览器初始化样式。
