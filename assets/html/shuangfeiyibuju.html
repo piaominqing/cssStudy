@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>双飞翼布局</title>
+    <style>
+      .container {
+        border: 1px solid #000;
+        width: 800px;
+        margin: 0 auto; /*居中*/
+        overflow: hidden;
+      }
+      .center {
+        float: left;
+        background: yellow;
+        width: 100%;
+      }
+      .left {
+        float: left;
+        background: green;
+        width: 200px;
+        margin-left: -100%;
+      }
+      .right {
+        float: left;
+        background: pink;
+        width: 200px;
+        margin-left: -200px;
+      }
+      .content {
+        margin: 0px 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <div class="content">华为云</div>
+      </div>
+      <div class="left">left</div>
+      <div class="right">right</div>
+    </div>
+    <!--
+      优点：
+        1.中间列内容列宽度自适应
+        2.中间内容区域先加载
+        3.使用浮动布局
+        4.巧妙使用负margin保持三列水平
+        5.方法简单直接
+        6.浏览器兼容性好
+    -->
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清除浮动方案</title>
+    <style>
+      .box {
+        border: 1px solid #000;
+      }
+      .left {
+        width: 200px;
+        height: 200px;
+        background: yellow;
+      }
+      .right {
+        width: 200px;
+        height: 200px;
+        background: green;
+      }
+      .clearfix:after {
+        content: ''; /* 必须*/
+        clear: both; /* 必须*/
+        display: block; /* 必须*/
+        height: 0px; /*选择*/
+        font-size: 0px; /*选择*/
+        visibility: hidden; /*选择*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box clearfix">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>
