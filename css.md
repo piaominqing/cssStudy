@@ -105,6 +105,14 @@ id 的需要唯一
 - list-style-type 标记类型，跟 ul 的 type 相同
 - list-style
 
+# 定位 position
+ ## 标准布局 static 默认
+ ## 固定布局 fixed 
+ ## 相对布局 relative
+ ## 绝对布局
+ ## 辅助属性
+ ## 层级属性
+
 # 兼容问题
 
 1. 删除浏览器初始化样式。
