@@ -173,10 +173,10 @@ id 的需要唯一
  ## 标准布局 static 默认
  ## 固定布局 fixed 
  ## 相对布局 relative
- ## 绝对布局
- ## 辅助属性
- ## 层级属性
- 
+ ## 绝对布局 absolute
+ ## 辅助属性 left right top buttom 
+ ## 层级属性 z-index
+
 # 兼容问题
 
 1. 删除浏览器初始化样式。
