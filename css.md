@@ -105,6 +105,70 @@ id 的需要唯一
 - list-style-type 标记类型，跟 ul 的 type 相同
 - list-style
 
+## 背景
+
+- background-color 背景颜色
+- background-image 背景图片
+- background-repeat 平铺设置
+- background-position 初始位置, 左上角为 0
+- background-attachment 滚动
+- background
+
+# 盒模型
+
+- Box Model width = 2\*margin + 2\*border+ 2\*padding + div
+
+## 内边距 padding
+
+## 边框 border
+
+## 外边距 margin 左右剧中 0 auto
+
+## display
+
+修改元素默认 display 块级和内联
+
+- none,
+- block,
+- inline 不能设置宽高,
+- inline-block 设置宽高时 block
+  - 内联元素间隙问题 body {font-size: 0}
+
+# 浮动
+
+## 浮动
+
+- float: left right default none
+
+## 清除浮动
+
+- 原因:元素设置为浮动时引起的父元素内容塌陷，影响布局效果。
+- clear: clear 属性用于设置元素哪一侧不允许浮动
+  - left
+  - right
+  - both
+  - none 默认值
+- overflow: overflow 属性用于设置元素不够容纳内容时的显示方式
+  - visible 默认值
+  - auto 自动添加滚动条
+  - hidden 隐藏超出的内容
+  - scroll 一直显示滚动条
+
+## 布局
+
+### 三列布局
+
+1. 实现一个左中右布局
+2. 左右俩侧宽度固定
+3. 中间内容区宽度能够自适应
+
+#### 双飞翼布局
+
+1. 使用 float 属性让左中右三列浮动
+2. 使用负 margin 属性让做鱼俩列与中间列处于同一水平线上
+3. 在中间列中增加 div 内容元素，设置 margin 值为左右俩列的宽度
+4. 清除浮动，让父元素高度正常显示
+
 # 定位 position
  ## 标准布局 static 默认
  ## 固定布局 fixed 
@@ -112,7 +176,10 @@ id 的需要唯一
  ## 绝对布局
  ## 辅助属性
  ## 层级属性
-
+ 
 # 兼容问题
 
 1. 删除浏览器初始化样式。
+
+- body {font-size: 0}
+- \*{margin:0; padding:0}
